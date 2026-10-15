@@ -1,0 +1,19 @@
+# A Simple Rule-Based AI Chatbot
+def chat_with_ai():
+    print("AI: Hello! I am a simple AI. What is on your mind today? (happy/sad/tired)")
+    
+    # Get user input and make it lowercase to make matching easier
+    user_input = input("You: ").lower()
+    
+    # The AI's decision-making logic
+    if "happy" in user_input:
+        print("AI: That's great! Happiness is a wonderful human emotion.")
+    elif "sad" in user_input:
+        print("AI: I am sorry to hear that. I hope things get better.")
+    elif "tired" in user_input:
+        print("AI: Make sure to get some rest! Even machines need to power down sometimes.")
+    else:
+        print("AI: I am still learning and don't quite understand that feeling yet.")
+
+if __name__ == "__main__":
+    chat_with_ai()
